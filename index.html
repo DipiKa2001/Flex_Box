@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wallper{
+            height: 400px;
+            width: 400px;
+            border: 3px solid green;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            flex-wrap: column nowrap;
+            align-items: flex-start;
+            align-content: flex-end;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+            /* ye ek box ko grow karta h fast */
+            flex-grow: 3;
+        }
+        .box{
+            border: 4px solid pink;
+            background-color: darkgoldenrod;
+            font-size: xx-large;
+            font-weight: 900;
+            order: 1;
+        }
+        .wallper1{
+            height: 400px;
+            width: 400px;
+            border: 3px solid rgb(110, 69, 22);
+            background-color: rgb(191, 185, 24);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box1{
+            border: 4px solid rgb(70, 31, 38);
+            background-color: rgb(34, 121, 63);
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        .wallper2{
+            height: 400px;
+            width: 400px;
+            border: 3px solid rgb(237, 90, 219);
+            background-color: rgb(51, 190, 144);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+        }
+        .box2{
+            border: 4px solid rgb(212, 81, 103);
+            background-color: rgb(220, 79, 40);
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        .wallper3{
+            height: 400px;
+            width: 400px;
+            border: 3px solid rgb(2, 187, 178);
+            background-color: rgb(12, 226, 155);
+            display: flex;
+            align-items: stretch;
+            justify-content: space-evenly;
+            flex-wrap: wrap-reverse;
+        }
+        .box3{
+            border: 4px solid rgb(226, 11, 47);
+            background-color: rgb(155, 128, 62);
+            font-size: xx-large;
+            font-weight: 900;
+            /* order se ham kise bhi box ko age pechi karsakti h */
+            order: 4;
+            /* flex grow m ham width k size ko equal kar sakti h */
+            flex-grow: 1;
+            /* size mota ho jaye ga */
+            align-self:stretch;
+            align-self:flex-end;
+        }
+        .wallper4{
+            height: 400px;
+            width: 400px;
+            border: 3px solid rgb(19, 45, 118);
+            background-color: rgb(7, 40, 29);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            align-content: flex-end;
+            align-content: space-around;
+            align-content: flex-start;
+            align-content: center;
+            align-content:space-between ;
+            align-content: space-evenly;
+        }
+        .box4{
+            border: 4px solid rgb(146, 39, 57);
+            background-color: rgb(13, 77, 50);
+            font-size: xx-large;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="wallper">
+        <div class="box">-1</div>
+        <div class="box">-2</div>
+        <div class="box">-3</div>
+        <div class="box">-4</div>
+    </div>
+    <br>
+    <div class="wallper1">
+        <div class="box1">-1</div>
+        <div class="box1">-2</div>
+        <div class="box1">-3</div>
+        <div class="box1">-4</div>
+    </div>
+    <br>
+    <div class="wallper2">
+        <div class="box2">-1</div>
+        <div class="box2">-2</div>
+        <div class="box2">-3</div>
+        <div class="box2">-4</div>
+    </div>
+    <br>
+    <div class="wallper3">
+        <div class="box3">-1</div>
+        <div class="box3">-2</div>
+        <div class="box3">-3</div>
+        <div class="box3">-4</div>
+    </div>
+    <div class="wallper4">
+        <div class="box4">-1</div>
+        <div class="box4">-2</div>
+        <div class="box4">-3</div>
+        <div class="box4">-4</div>
+    </div>
+    
+</body>
+</html>
